@@ -9,7 +9,7 @@ function ShowBookList() {
 
   useEffect(() => {
     axios
-      .get('https://5000-saswathi3-project3-nedld7b2688.ws-us93.gitpod.io/api/books')
+      .get('/api/books')
       .then((res) => {
         setBooks(res.data);
       })

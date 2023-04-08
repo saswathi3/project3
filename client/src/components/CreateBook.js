@@ -24,7 +24,7 @@ const CreateBook = (props) => {
     e.preventDefault();
 
     axios
-      .post('https://5000-saswathi3-project3-nedld7b2688.ws-us93.gitpod.io/api/books', book)
+      .post('/api/books', book)
       .then((res) => {
         setBook({
           title: '',
@@ -70,7 +70,7 @@ const CreateBook = (props) => {
                   onChange={onChange}
                 />
               </div>
-              <br />
+              
 
               <div className='form-group'>
                 <input
